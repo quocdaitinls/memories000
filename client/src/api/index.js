@@ -1,6 +1,9 @@
 import axios from "axios";
 
-const API = axios.create({baseURL: "http://localhost:5000"});
+const API = axios.create({
+    baseURL: "https://loser08082001-memories000-be.zeet.app",
+});
+// const API = axios.create({baseURL: "http://localhost:5000"});
 // const url = "https://memories000.herokuapp.com/posts";
 
 API.interceptors.request.use((req) => {

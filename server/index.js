@@ -7,7 +7,7 @@ import postRoutes from "./routes/posts.js";
 import userRoutes from "./routes/user.js";
 
 const app = express();
-dotenv.config();
+// dotenv.config();
 
 app.use(bodyParser.json({limit: "30mb", extended: true}));
 app.use(bodyParser.urlencoded({limit: "30mb", extended: true}));
@@ -19,6 +19,9 @@ app.use("/user", userRoutes);
 app.get("/", (req, res) => {
     res.send("Hello to Memories API");
 });
+
+const CONNECTION_URL =
+    "mongodb://rootadmin:123456@oser08082001-memories000-mongodb-production/memories";
 const PORT = process.env.PORT || 5000;
 
 mongoose
