@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 });
 
 const CONNECTION_URL =
-    "mongodb://rootadmin:123456@oser08082001-memories000-mongodb-production/admin";
+    "mongodb://rootadmin:123456@loser08082001-memories000-mongodb-production/admin";
 const PORT = process.env.PORT || 5000;
 
 mongoose
