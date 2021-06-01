@@ -17,11 +17,14 @@ app.use("/posts", postRoutes);
 app.use("/user", userRoutes);
 
 app.get("/", (req, res) => {
-    res.send("Hello to Memories API");
+    res.send("APP IS RUNNING...");
 });
 
 const CONNECTION_URL =
     "mongodb://rootadmin:123456@loser08082001-memories000-mongodb-production/admin";
+
+// const CONNECTION_URL =
+//     "mongodb+srv://admin:memories@cluster0.csqo2.mongodb.net/Database001?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5000;
 
 mongoose
